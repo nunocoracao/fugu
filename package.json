@@ -14,9 +14,9 @@
     "url": "git+https://github.com/nunocoracao/fugu.git"
   },
   "author": {
-    "name" : "Nuno Coração",
-    "github" : "https://github.com/nunocoracao",
-    "url" : "https://nunocoracao.com"
+    "name": "Nuno Coração",
+    "github": "https://github.com/nunocoracao",
+    "url": "https://nunocoracao.com"
   },
   "license": "ISC",
   "bugs": {
@@ -26,6 +26,7 @@
   "keywords": [],
   "dependencies": {
     "chalk": "^5.0.1",
+    "colord": "^2.9.3",
     "commander": "^9.4.0",
     "conf": "^10.2.0"
   }
