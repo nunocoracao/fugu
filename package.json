@@ -1,0 +1,32 @@
+{
+  "name": "fugu",
+  "version": "1.0.0",
+  "description": "TBD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "fugu": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nunocoracao/fugu.git"
+  },
+  "author": {
+    "name" : "Nuno Coração",
+    "github" : "https://github.com/nunocoracao",
+    "url" : "https://nunocoracao.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nunocoracao/fugu/issues"
+  },
+  "homepage": "https://github.com/nunocoracao/fugu#readme",
+  "keywords": [],
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "commander": "^9.4.0",
+    "conf": "^10.2.0"
+  }
+}
