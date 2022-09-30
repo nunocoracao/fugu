@@ -15,44 +15,24 @@ function generate (color1, color2, color3) {
     const cd2 = colord("#"+color2);
     const cd3 = colord("#"+color3);
     
-    var neutral = [
-        cd1.lighten(0.2).toRgb(),
-        cd1.lighten(0.15).toRgb(),
-        cd1.lighten(0.1).toRgb(),
-        cd1.lighten(0.05).toRgb(),
-        cd1.toRgb(),
-        cd1.darken(0.05).toRgb(),
-        cd1.darken(0.1).toRgb(),
-        cd1.darken(0.15).toRgb(),
-        cd1.darken(0.2).toRgb(),
-        cd1.darken(0.25).toRgb(),
-    ]
+    var createPal = (color)=>{
+        return [
+            color.lighten(0.6).toRgb(),
+            color.lighten(0.45).toRgb(),
+            color.lighten(0.3).toRgb(),
+            color.lighten(0.15).toRgb(),
+            color.toRgb(),
+            color.darken(0.08).toRgb(),
+            color.darken(0.16).toRgb(),
+            color.darken(0.24).toRgb(),
+            color.darken(0.32).toRgb(),
+            color.darken(0.4).toRgb(),
+        ]
+    }
 
-    var primary = [
-        cd2.lighten(0.2).toRgb(),
-        cd2.lighten(0.15).toRgb(),
-        cd2.lighten(0.1).toRgb(),
-        cd2.lighten(0.05).toRgb(),
-        cd2.toRgb(),
-        cd2.darken(0.05).toRgb(),
-        cd2.darken(0.1).toRgb(),
-        cd2.darken(0.15).toRgb(),
-        cd2.darken(0.2).toRgb(),
-        cd2.darken(0.25).toRgb(),
-    ]
-
-    var secondary = [
-        cd3.lighten(0.2).toRgb(),
-        cd3.lighten(0.15).toRgb(),
-        cd3.lighten(0.1).toRgb(),
-        cd3.lighten(0.05).toRgb(),
-        cd3.toRgb(),
-        cd3.darken(0.05).toRgb(),
-        cd3.darken(0.1).toRgb(),
-        cd3.darken(0.15).toRgb(),
-        cd3.darken(0.2).toRgb(),
-        cd3.darken(0.25).toRgb(),
-    ]
+    var neutral = createPal(cd1)
+    var primary = createPal(cd2)
+    var secondary = createPal(cd3)
 
     var res = ":root { --color-neutral: 255, 255, 255;\n"
     
