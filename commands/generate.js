@@ -17,6 +17,7 @@ function generate (color1, color2, color3) {
     
     var createPal = (color)=>{
         return [
+            color.lighten(0.75).toRgb(),
             color.lighten(0.6).toRgb(),
             color.lighten(0.45).toRgb(),
             color.lighten(0.3).toRgb(),
@@ -26,7 +27,6 @@ function generate (color1, color2, color3) {
             color.darken(0.16).toRgb(),
             color.darken(0.24).toRgb(),
             color.darken(0.32).toRgb(),
-            color.darken(0.4).toRgb(),
         ]
     }
 
